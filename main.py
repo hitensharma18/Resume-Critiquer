@@ -1,5 +1,10 @@
 # AI Resume Critiquer
-# Learning project built by following a tutorial and experimenting with Streamlit and OpenAI API.
+# Streamlit application for AI-powered resume feedback using the OpenAI API.
+# This project was built as a learning exercise inspired by a tutorial.
+# Tutorial reference (Project 2 from the video):
+# https://www.youtube.com/watch?v=XZdY15sHUa8&t=2773s
+# The implementation was extended with additional features such as
+# resume word count and downloadable feedback.
 
 import streamlit as st
 import PyPDF2
