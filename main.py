@@ -29,6 +29,8 @@ if not OPENAI_API_KEY:
 uploaded_file = st.file_uploader("Upload your resume (PDF or TXT)", type=["pdf", "txt"])
 job_role = st.text_input("Enter the job role you're targetting (optional)")
 
+job_description = st.text_area("Paste the job description (optional)")
+
 analyze = st.button("Analyze Resume")
 
 
@@ -81,6 +83,9 @@ if analyze and uploaded_file:
 
         Resume content:
         {file_content}
+        
+        Job description:
+        {job_description if job_description else "No job description provided"}
 
         Please provide your analysis in a clear, structured format with specific recommendations."""
 
